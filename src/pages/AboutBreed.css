@@ -1,0 +1,113 @@
+.about-breed {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .about-breed h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+  }
+  
+  .about-breed section {
+    margin-bottom: 40px;
+  }
+  
+  .intro, .history {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .intro .text, .history .content {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .intro .image, .history .content img {
+    flex: 1;
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .history .content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .history img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .care-tips h2 {
+    margin-bottom: 10px;
+  }
+  
+  .care-tips ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .care-tips li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .care-tips li strong {
+    color: #222;
+    margin-bottom: 5px;
+  }
+  
+  /* ---- Медиа-запросы для мобильных устройств ---- */
+  
+  /* Устройства с шириной экрана до 768px */
+  @media (max-width: 768px) {
+    .intro, .history {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .intro .text, .history .content {
+      flex: none;
+      min-width: 100%;
+    }
+  
+    .intro .image, .history img {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    .care-tips ul {
+      padding: 0 10px;
+    }
+  }
+  
+  /* Устройства с шириной экрана до 480px */
+  @media (max-width: 480px) {
+    .about-breed {
+      padding: 10px;
+    }
+  
+    .care-tips li {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .care-tips li strong {
+      font-size: 16px;
+    }
+  }
+  
