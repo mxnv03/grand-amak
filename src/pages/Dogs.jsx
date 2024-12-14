@@ -9,15 +9,21 @@ const dogsData = [
     birthDate: '2021-06-15',
     description: 'Maximus is a strong and loyal American Akita with a playful spirit and protective instincts.',
     images: [mainImage1, mainImage1, mainImage1],
+    tituls: 'Юный чемпион',
     breed: 'Американская акита',
+    simple_name: 'Хади',
+    sk_name: 'Хади',
   },
   {
     id: 2,
     name: 'GRAND AMAK YANIKA',
     birthDate: '2020-09-10',
-    description: 'Luna is a gentle and elegant Akita with a calm demeanor and a beautiful coat.',
+    description: 'Luna is a gentle and elegant Akita with a calm demeanor and a beautiful coat.Luna is a gentle and elegant Akita with a calm demeanor and a beautiful coat',
     images: [mainImage1, mainImage1, mainImage1, mainImage1, '/images/luna3.jpg', mainImage1, mainImage1],
+    tituls: 'Юный чемпион',
     breed: 'Американская акита',
+    simple_name: 'Ника',
+    sk_name: 'Нику'
   },
   {
     id: 3,
@@ -25,7 +31,10 @@ const dogsData = [
     birthDate: '2021-06-15',
     description: 'Maximus is a strong and loyal American Akita with a playful spirit and protective instincts.',
     images: [mainImage1, '/images/maximus2.jpg', '/images/maximus3.jpg'],
+    tituls: 'Юный чемпион',
     breed: 'Пражский крысарик',
+    simple_name: 'Лия',
+    sk_name: 'Лию'
   },
   {
     id: 4,
@@ -33,7 +42,10 @@ const dogsData = [
     birthDate: '2021-06-15',
     description: 'Maximus is a strong and loyal American Akita with a playful spirit and protective instincts.',
     images: [mainImage1, '/images/maximus2.jpg', '/images/maximus3.jpg'],
+    tituls: 'Юный чемпион',
     breed: 'Пражский крысарик',
+    simple_name: 'Мишелька',
+    sk_name: 'Мишель'
   },
   {
     id: 5,
@@ -41,7 +53,10 @@ const dogsData = [
     birthDate: '2021-06-15',
     description: 'Teona is a playful and vibrant Prague Ratter with a curious personality.',
     images: [mainImage1, '/images/teona2.jpg', '/images/teona3.jpg'],
+    tituls: 'Юный чемпион',
     breed: 'Американская акита',
+    simple_name: '__',
+    sk_name: 'Лии'
   },
   {
     id: 6,
@@ -49,7 +64,10 @@ const dogsData = [
     birthDate: '2021-06-15',
     description: 'Diva is a calm and elegant Prague Ratter with a sweet temperament.',
     images: [mainImage1, '/images/diva2.jpg', '/images/diva3.jpg'],
+    tituls: 'Юный чемпион',
     breed: 'Американская акита',
+    simple_name: 'Дива',
+    sk_name: 'Диву'
   },
 ];
 
@@ -118,8 +136,9 @@ const Dogs = () => {
               &times;
             </button>
             <h2>{selectedDog.name}</h2>
-            <p><strong>Born:</strong> {selectedDog.birthDate}</p>
-            <p>{selectedDog.description}</p>
+            <p><strong>Дата рождения:</strong> {selectedDog.birthDate}</p>
+            <p><strong>Титулы:</strong> {selectedDog.tituls}</p>
+            <p><strong>Немного про {selectedDog.sk_name}:</strong> {selectedDog.description}</p>
             <div className="dog-carousel">
               {selectedDog.images.map((image, index) => (
                 <img

@@ -1,60 +1,88 @@
 /* Общие стили для футера */
-.footer {
-  background-color: #5d5c61;
-  color: #fff;
-  padding: 20px 20px;
-  text-align: center;
+.custom-footer {
+  background-color: #5d5c61; /* Фон градиент */
+  padding: 40px 20px;
+  color: black;
+  font-family: Arial, sans-serif;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 40px;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.footer-info,
-.footer-social {
-  width: 100%;
-  max-width: 400px;
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
 }
 
-.footer-info h3,
-.footer-social h3 {
-  font-size: 20px;
+.footer-logo {
+  max-width: 150px;
   margin-bottom: 10px;
-  font-weight: bold;
 }
 
-.footer-info p {
-  font-size: 14px;
-  line-height: 1.5;
+.footer-bottom {
+  padding: 0 0 10;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  color: black;
 }
 
-.footer-social .social-icons {
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.footer-section ul {
   list-style: none;
   padding: 0;
-  display: flex;
-  gap: 20px;
 }
 
-.footer-social .social-icons li {
-  display: inline-block;
+.footer-section ul li {
+  margin-bottom: 8px;
 }
 
-.footer-social .social-icons li a img {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.3s;
+.footer-section ul li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
 }
 
-.footer-social .social-icons li a:hover img {
+.footer-section ul li a:hover {
+  color: #8c5a3d;
+}
+
+.footer-icon img {
+  margin-right: 5px;
+  width: 20px;
+  height: 18px;
+  border-radius: 80%;
+  /* transition: transform 0.3s; */
+}
+
+.footer-bottom {
+  align-items: center;
+}
+
+.footer-icon img:hover {
   transform: scale(1.1);
 }
 
-.footer-bottom p {
-  margin: 0;
-  font-size: 18px;
+.footer-section p a {
+  text-decoration: none;
+  color: black;
 }
+
+.footer-section p a:hover {
+  color: #8c5a3d;
+}
+
   

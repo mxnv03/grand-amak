@@ -9,6 +9,16 @@
     margin-bottom: 20px;
     color: #333;
   }
+
+  .contact-page a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+  }
+
+  .contact-page a:hover {
+    color: #8c5a3d;
+  }
   
   .contact-info {
     display: flex;

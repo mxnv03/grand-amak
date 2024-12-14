@@ -10,7 +10,7 @@ const Contact = () => (
         <h2>Наше месторасположение</h2>
         <p>606100 Perchankina Street, Pavlovo, 45</p>
         <h2>Будем на связи</h2>
-        <p><strong>Телефон:</strong> +7 910-871-2928</p>
+        <p><strong>Телефон:</strong> <a href="tel:+7 (910) 871-29-28">+7 (910) 871-29-28</a></p>
         <p><strong>Email:</strong> pochta@gmail.com</p>
         <h2>Мы в соцсетях</h2>
         <div className="social-media">
