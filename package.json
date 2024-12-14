@@ -4,7 +4,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mxnv03.github.io/grand-amak.github.io/",
+  "homepage": "https://mxnv03.github.io/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
