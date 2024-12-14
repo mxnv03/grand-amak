@@ -1,41 +1,47 @@
 import React from 'react';
 import './Footer.css'; // Подключаем CSS для стилизации
+import wassapGif from '../assets/wassap_logo.gif';
+import telegramGif from '../assets/tg_logo.gif';
+import logo_black from '../assets/Grand_Amak_logo.png';
+
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-info">
-          <h3>О питомнике</h3>
-          <p>Наш питомник специализируется на разведении американских акит и других пород. Мы заботимся о каждом щенке, предоставляя им лучший уход.</p>
-          <p>Контакты: info@yourkennel.com</p>
-          <p>Адрес: Улица Питомников, 123, Город, Страна</p>
+    <footer class="custom-footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <img src={logo_black} alt="Asti Mitrel Logo" class="footer-logo" />
+          <p>Профессиональная забота о каждом выпускнике</p>
         </div>
 
-        <div className="footer-social">
-          <h3>Мы в социальных сетях</h3>
-          <ul className="social-icons">
-            <li>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <img src="/images/facebook-icon.png" alt="Facebook" />
-              </a>
-            </li>
-            <li>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <img src="/images/instagram-icon.png" alt="Instagram" />
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                <img src="/images/twitter-icon.png" alt="Twitter" />
-              </a>
-            </li>
-            <li>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                <img src="/images/youtube-icon.png" alt="YouTube" />
-              </a>
-            </li>
+        <div class="footer-section">
+          <h3>Grand Amak</h3>
+          <ul>
+            <li><a href="/dogs">Наши производители</a></li>
+            <li><a href="/puppies">Свободные щенки</a></li>
           </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Полезное</h3>
+          <ul>
+            <li><a href="/contact">Контакты</a></li>
+            <li><a href="/galery">Галерея</a></li>
+            <li><a href="/">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Контакты</h3>
+          <p><a href="tel:+7 (910) 871-29-28">+7 (910) 871-29-28</a></p>
+          <p><a href="https://api.whatsapp.com/send/?phone=79108712928&text&type=phone_number&app_absent=0" target="_blank" class="footer-icon"> 
+            <img src={wassapGif} alt="WhatsApp Icon" />
+            WhatsApp
+          </a></p>
+          <p><a href="https://t.me/Grand_Amak" target="_blank" class="footer-icon"> 
+            <img src={telegramGif} alt="Telegram Icon" />
+            Telegram
+          </a></p>
         </div>
       </div>
 

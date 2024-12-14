@@ -57,6 +57,8 @@ const Home = () => {
         <img src={mainBanner} alt="Баннер" />
       </div>
 
+      <h2>Новости</h2>
+
       {/* Лента новостей */}
       <div className="news-feed">
         {newsData.map((news) => (
@@ -100,6 +102,12 @@ const Home = () => {
           <div className="modal-overlay" onClick={closeNewsModal}></div>
         </div>
       )}
+    <div className="banner1">
+      <div className="banner-content">
+        <h1>Остались вопросы? Напишите нам!</h1>
+        <a href="https://t.me/Grand_Amak" className="banner-button">Хочу щенка</a>
+      </div>
+    </div>
     </div>
   );
 };

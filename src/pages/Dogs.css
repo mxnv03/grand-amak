@@ -5,6 +5,10 @@
     text-align: center;
   }
 
+  .dogs-page h2 {
+    text-align: left;
+  }
+
   .fullscreen-modal {
   position: fixed;
   top: 0;
@@ -97,6 +101,10 @@
     cursor: pointer;
     transition: transform 0.3s;
   }
+
+  .dogs-page h2 {
+    text-align: left;
+  }
   
   .dog-card:hover {
     transform: scale(1.05);
@@ -113,6 +121,7 @@
   .dog-card h2 {
     margin: 10px 0 5px;
     font-size: 18px;
+    text-align: center;
   }
   
   .dog-card p {
@@ -133,6 +142,10 @@
     align-items: center;
     z-index: 1000;
   }
+
+  .dog-modal p {
+   text-align: left; 
+  }
   
   .modal-overlay {
     position: absolute;
@@ -148,6 +161,8 @@
     border-radius: 10px;
     padding: 20px;
     max-width: 500px;
+    height: 400px;
+    max-height: 500px;
     width: 90%;
     z-index: 1001;
     text-align: center;

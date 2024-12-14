@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
-import logo from '../assets/logo.jpg';
+import logo from '../assets/Grand_Amak_logo.png';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,6 +26,7 @@ const Header = () => {
             <li><Link to="/about-breed" onClick={() => setMenuOpen(false)}>О питомнике</Link></li>
             <li><Link to="/dogs" onClick={() => setMenuOpen(false)}>Наши собаки</Link></li>
             <li><Link to="/puppies" onClick={() => setMenuOpen(false)}>Щенки</Link></li>
+            <li><Link to="/galery" onClick={() => setMenuOpen(false)}>Галерея</Link></li>
             <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Контакты</Link></li>
           </ul>
         </nav>

@@ -13,7 +13,7 @@ import './SnowEffect.css'; // Стили для падающего снега
 const App = () => {
   useEffect(() => {
     const createSnowflake = () => {
-      if (window.innerWidth < 768 && Math.random() > 0.9) return; // Меньше снежинок на мобильных
+      if (window.innerWidth < 768) return; // Выключаем снежинки на мобильных
       const snowflake = document.createElement("div");
       snowflake.className = "snowflake";
       snowflake.style.left = `${Math.random() * 100}vw`;
