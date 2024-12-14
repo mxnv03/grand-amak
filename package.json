@@ -1,6 +1,7 @@
 {
+  "homepage": "https://mxnv03.github.io/grand-amak",
   "name": "dogs_home",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://mxnv03.github.io/grand-amak.github.io/",
