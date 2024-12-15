@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-// import Gallery from './components/Gallery';
+import Gallery from './components/Gallery';
 import Home from './pages/Home';
 import AboutBreed from './pages/AboutBreed';
 import Dogs from './pages/Dogs';
@@ -40,7 +40,7 @@ const App = () => {
         <Routes>
           <Route path="/grand-amak" element={<Home />} />
           <Route path="/about-breed" element={<AboutBreed />} />
-//           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/dogs" element={<Dogs />} />
           <Route path="/puppies" element={<Puppies />} />
           <Route path="/contact" element={<Contact />} />
