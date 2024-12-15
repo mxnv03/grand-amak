@@ -26,7 +26,7 @@ const Header = () => {
             <li><Link to="/about-breed" onClick={() => setMenuOpen(false)}>О питомнике</Link></li>
             <li><Link to="/dogs" onClick={() => setMenuOpen(false)}>Наши собаки</Link></li>
             <li><Link to="/puppies" onClick={() => setMenuOpen(false)}>Щенки</Link></li>
-            <li><Link to="/galery" onClick={() => setMenuOpen(false)}>Галерея</Link></li>
+            <li><Link to="/gallery" onClick={() => setMenuOpen(false)}>Галерея</Link></li>
             <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Контакты</Link></li>
           </ul>
         </nav>
