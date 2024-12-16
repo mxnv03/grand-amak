@@ -106,6 +106,8 @@
 
   .nav-menu.open {
     display: flex;
+    position: absolute;
+    z-index: 9999;
   }
 
   .nav-menu ul {

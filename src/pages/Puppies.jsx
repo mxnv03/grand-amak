@@ -1,14 +1,30 @@
 import React from 'react';
-import DogCard from '../components/DogCard';
+import PuppyInfo from '../components/PuppyInfo';
+import puppies_u from '../assets/puppies1.jpg';
 
-const Puppies = () => (
-  <div>
-    <h1>Puppies for Sale</h1>
-    <div className="dog-list">
-      <DogCard name="Puppy 1" image="path/to/puppy1.jpg" description="Adorable Puppy 1" />
-      <DogCard name="Puppy 2" image="path/to/puppy2.jpg" description="Adorable Puppy 2" />
+
+const PuppiesPage = () => {
+  // Данные для разных блоков щенков
+  const puppiesData = [
+    {
+      title: 'В питомнике есть свободные щенки американской акиты',
+      image: puppies_u,
+      pedigreeLink: 'https://aussieinfo.ru/dog.phpid=36988&screen=4&partnerid=37518&level=4&ilevel=5',
+    },
+  ];
+
+  return (
+    <div>
+      {puppiesData.map((puppy, index) => (
+        <PuppyInfo
+          key={index}
+          title={puppy.title}
+          image={puppy.image}
+          pedigreeLink={puppy.pedigreeLink}
+        />
+      ))}
     </div>
-  </div>
-);
+  );
+};
 
-export default Puppies;
+export default PuppiesPage;

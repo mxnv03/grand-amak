@@ -14,10 +14,13 @@
   }
 
   h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #3e1f00;
     font-family: "Old Standard TT", serif;
     font-style: normal;
-    font-size: 25px;
-    margin: 10px 20px 0;
   }
 
   .banner1 {
@@ -36,21 +39,30 @@
   
   .banner1 h1 {
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 2  0px;
   }
   
-  .banner-button {
-    background-color: #3795ae; /* Оранжевый цвет кнопки */
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
+  .banner-button{
+    background-color: #fbeee0;
+    border: 1px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
     font-size: 18px;
-    transition: background-color 0.3s ease;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
   }
   
   .banner-button:hover {
-    background-color: #3790cf; /* Более темный оттенок */
+    background-color: #fff; 
   }
   
   /* Лента новостей */

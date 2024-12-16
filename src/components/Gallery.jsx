@@ -27,7 +27,7 @@ const Gallery = () => {
 
   return (
     <div className="gallery-container">
-      <h1>Наша Галерея</h1>
+      <h1>Наши собаки и выпускники</h1>
       <ImageGallery
         items={images}
         showThumbnails={true}

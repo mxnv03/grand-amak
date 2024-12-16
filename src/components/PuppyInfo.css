@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+.puppy-info-section {
+  padding: 2rem;
+}
+
+.puppy-info-container {
+  display: flex;
+  flex-direction: row; /* Горизонтальное отображение на больших экранах */
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+
+.puppy-slider img {
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%; /* Масштабирование для мобильных экранов */
+  height: auto;
+}
+
+.puppy-details {
+  max-width: 50%;
+  text-align: left;
+}
+
+.puppy-title {
+  font-size: 2rem;
+  color: #5a2d18;
+  margin-bottom: 1rem;
+  font-family: "Old Standard TT", serif;
+}
+
+.puppy-link a {
+  color: #964b00;
+  text-decoration: underline;
+}
+
+.whatsapp-button {
+  margin-top: 1.5rem;
+  background-color: #fbeee0;
+  border: 1px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  touch-action: manipulation;
+  transition: 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #fff;
+}
+
+.whatsapp-button a {
+  text-decoration: none;
+  color: #422800;
+  font-weight: bold;
+}
+
+/* --- Адаптивность для мобильных устройств --- */
+@media (max-width: 768px) {
+  .puppy-info-container {
+    flex-direction: column; /* Вертикальное отображение на маленьких экранах */
+    text-align: center;
+  }
+
+  .puppy-slider img {
+    max-width: 100%; /* Устанавливаем ширину на весь экран */
+    margin-bottom: 1rem;
+  }
+
+  .puppy-details {
+    max-width: 100%; /* Детали занимают всю ширину */
+    text-align: center;
+  }
+
+  .puppy-title {
+    font-size: 1.5rem; /* Уменьшение размера заголовка */
+  }
+
+  .whatsapp-button {
+    font-size: 16px; /* Уменьшение кнопки */
+    line-height: 45px;
+    margin-left: 0; /* Центрируем кнопку */
+  }
+}
+
+@media (max-width: 480px) {
+  .puppy-title {
+    font-size: 1.2rem; /* Ещё меньше на маленьких экранах */
+  }
+
+  .whatsapp-button {
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0 12px;
+  }
+}

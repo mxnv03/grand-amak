@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Home.css';
 import mainBanner from '../assets/logo.jpg'; // Ваш баннер
 import { FaTimes } from 'react-icons/fa'; // Иконка для закрытия
+import FAQ from '../components/FAQ';
 
 // Пример данных новостей
 const newsData = [
@@ -52,7 +53,6 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      {/* Баннер */}
       <div className="banner">
         <img src={mainBanner} alt="Баннер" />
       </div>
@@ -102,13 +102,16 @@ const Home = () => {
           <div className="modal-overlay" onClick={closeNewsModal}></div>
         </div>
       )}
+    <div>
+      <FAQ /> 
+    </div>
     <div className="banner1">
       <div className="banner-content">
         <h1>Остались вопросы? Напишите нам!</h1>
         <a href="https://t.me/Grand_Amak" className="banner-button">Хочу щенка</a>
       </div>
     </div>
-    </div>
+    </div>  
   );
 };
 
