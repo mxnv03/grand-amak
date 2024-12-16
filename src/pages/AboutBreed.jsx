@@ -5,7 +5,7 @@ import akitaImage2 from '../assets/logo.jpg';
 
 const AboutBreed = () => (
   <div className="about-breed">
-    <h1>About the American Akita</h1>
+    <h1>Немного о нас</h1>
     <section className="intro">
       <div className="text">
         <p>

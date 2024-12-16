@@ -5,7 +5,7 @@ import mainImage1 from '../assets/logo.jpg';
 const dogsData = [
   {
     id: 1,
-    name: 'Hadi',
+    name: 'HADI',
     birthDate: '2021-06-15',
     description: 'Maximus is a strong and loyal American Akita with a playful spirit and protective instincts.',
     images: [mainImage1, mainImage1, mainImage1],
@@ -38,7 +38,7 @@ const dogsData = [
   },
   {
     id: 4,
-    name: 'Miechel',
+    name: 'MIECHEL',
     birthDate: '2021-06-15',
     description: 'Maximus is a strong and loyal American Akita with a playful spirit and protective instincts.',
     images: [mainImage1, '/images/maximus2.jpg', '/images/maximus3.jpg'],

@@ -25,8 +25,8 @@ const Footer = () => {
         <div class="footer-section">
           <h3>Полезное</h3>
           <ul>
-            <li><a href="/contact">Контакты</a></li>
-            <li><a href="/gallery">Галерея</a></li>
+            <li><a href="grand-amak/contact">Контакты</a></li>
+            <li><a href="/gallery/">Галерея</a></li>
             <li><a href="/">Политика конфиденциальности</a></li>
           </ul>
         </div>

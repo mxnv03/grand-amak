@@ -1,5 +1,5 @@
 .about-breed {
-    max-width: 1200px;
+    max-width: 300px;
     margin: 0 auto;
     padding: 20px;
     line-height: 1.6;
@@ -10,6 +10,7 @@
     text-align: center;
     margin-bottom: 30px;
     color: #222;
+    font-style: italic;
   }
   
   .about-breed section {
@@ -96,9 +97,10 @@
   }
   
   /* Устройства с шириной экрана до 480px */
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     .about-breed {
       padding: 10px;
+      flex-direction: column;
     }
   
     .care-tips li {

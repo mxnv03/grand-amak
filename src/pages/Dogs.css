@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding: 20px;
     text-align: center;
+    font-style: italic;
   }
 
   .dogs-page h2 {
@@ -91,19 +92,15 @@
   }
   
   .dog-card {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    background: #9e9e9e;
+    border: 2px solid #ddd;
+    border-radius: 20px;
     overflow: hidden;
     width: calc(50% - 10px); /* Две карточки на строку */
     max-width: 450px; /* Максимальная ширина карточки */
     max-width: 400px;
     cursor: pointer;
     transition: transform 0.3s;
-  }
-
-  .dogs-page h2 {
-    text-align: left;
   }
   
   .dog-card:hover {
