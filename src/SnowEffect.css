@@ -4,7 +4,7 @@
     top: -10px;
     color: #fff;
     user-select: none;
-    pointer-events: none; /* Снежинки не будут мешать кликам */
+    pointer-events: none;
     animation-name: fall;
     animation-timing-function: linear;
     animation-iteration-count: infinite;

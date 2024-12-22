@@ -1,0 +1,54 @@
+.health-focus-section {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .health-content {
+    max-width: 1200px;
+    text-align: left;
+  }
+  
+  .health-title h2 {
+    font-family: "Old Standard TT", serif;
+    font-size: 25px;
+    text-align: left;
+    font-weight: bold;
+    color: #3e1f00;
+    margin-bottom: 0.5rem;
+  }
+  
+  .underline {
+    width: 150px;
+    height: 3px;
+    background-color: #3e1f00;
+    margin-top: 0.5rem;
+  }
+  
+  .health-description {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .health-left,
+  .health-right {
+    flex: 1;
+    font-family: "Kurale", serif;
+    font-size: 1rem;
+    color: #3e1f00;
+  }
+  
+  .health-left p,
+  .health-right p {
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .health-description {
+      flex-direction: column;
+      row-gap: 1.5rem;
+    }
+  }
+  

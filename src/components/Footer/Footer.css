@@ -1,0 +1,87 @@
+/* Общие стили для футера */
+.custom-footer {
+  background-color: #D8AB7F; 
+  padding: 20px 20px;
+  color: #3e1f00;
+  font-family: "Old Standard TT", serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-logo {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  padding: 0 0 0;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #3e1f00;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #3e1f00;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #8c5a3d;
+}
+
+.footer-icon img {
+  margin-right: 5px;
+  width: 20px;
+  height: 18px;
+  border-radius: 80%;
+  /* transition: transform 0.3s; */
+}
+
+.footer-bottom {
+  align-items: center;
+}
+
+.footer-icon img:hover {
+  transform: scale(1.1);
+}
+
+.footer-section p a {
+  text-decoration: none;
+  color: #3e1f00;
+}
+
+.footer-section p a:hover {
+  color: #3e1f00;
+}
+
+  
