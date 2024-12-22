@@ -4,6 +4,7 @@ import mainBanner from '/src/assets/main_page-banner-web.png';
 import FAQ from '/src/components/FAQ/FAQ';
 import ValuesSection from "/src/components/OurValues/OurValues";
 import HealthFocusSection from "/src/components/HealthFocusSection/HealthFocusSection";
+import AboutBreed from "/src/components/AboutBreed/AboutBreed";
 
 const Home: React.FC = () => {
   return (
@@ -13,8 +14,12 @@ const Home: React.FC = () => {
       </div>
 
       <div className='help-div'>
-        <h2>Узнать про бронирование свободных малышей</h2>
+        <h2>Узнать про свободных малышей</h2>
         <a href="/grand-amak/puppies">Подробнее</a>     
+      </div>
+
+      <div>
+        <AboutBreed /> 
       </div>
 
       <div className="homepage-values-wrapper">

@@ -1,7 +1,13 @@
 import React from 'react';
 import './PuppyInfo.css';
 
-const PuppyInfo = ({ title, image, pedigreeLink }) => {
+interface PuppyInfoProps {
+  title: string;
+  image: string;
+  pedigreeLink: string;
+}
+
+const PuppyInfo: React.FC<PuppyInfoProps> = ({ title, image, pedigreeLink }) => {
   return (
     <section className="puppy-info-section">
       <div className="puppy-info-container">
@@ -15,7 +21,7 @@ const PuppyInfo = ({ title, image, pedigreeLink }) => {
           <p className="puppy-link">
             Ссылка на родословную:{' '}
             <a href={pedigreeLink} target="_blank" rel="noopener noreferrer">
-              родословная 
+              родословная
             </a>
           </p>
           {/* Кнопка WhatsApp */}

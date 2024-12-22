@@ -4,7 +4,6 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Gallery from './components/Gallery/Gallery';
 import Home from './pages/Home/Home';
-import AboutBreed from './pages/AboutBreed/AboutBreed';
 import Dogs from './pages/Dogs/Dogs';
 import Puppies from './pages/Puppies/Puppies';
 import Contact from './pages/Contact/Contact';
@@ -39,7 +38,6 @@ const App: React.FC = () => {
       <main>
         <Routes>
           <Route path="/grand-amak" element={<Home />} />
-          <Route path="/about-breed" element={<AboutBreed />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/dogs" element={<Dogs />} />
           <Route path="/puppies" element={<Puppies />} />

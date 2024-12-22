@@ -4,17 +4,16 @@ import wassapGif from '/src/assets/wassap_logo.gif';
 import telegramGif from '/src/assets/tg_logo.gif';
 import logo_black from '/src/assets/Grand_Amak_logo.png';
 
-
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
-    <footer class="custom-footer">
-      <div class="footer-container">
-        <div class="footer-section">
-          <img src={logo_black} alt="Asti Mitrel Logo" class="footer-logo" />
+    <footer className="custom-footer">
+      <div className="footer-container">
+        <div className="footer-section">
+          <img src={logo_black} alt="Grand Amak Logo" className="footer-logo" />
           <p>Профессиональная забота о каждом выпускнике</p>
         </div>
 
-        <div class="footer-section">
+        <div className="footer-section">
           <h3>Grand Amak</h3>
           <ul>
             <li><a href="/grand-amak/dogs">Наши производители</a></li>
@@ -22,7 +21,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div class="footer-section">
+        <div className="footer-section">
           <h3>Полезное</h3>
           <ul>
             <li><a href="/grand-amak/gallery">Галерея</a></li>
@@ -30,14 +29,14 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div class="footer-section">
+        <div className="footer-section">
           <h3>Контакты</h3>
           <p><a href="tel:+7 (910) 871-29-28">+7 (910) 871-29-28</a></p>
-          <p><a href="https://api.whatsapp.com/send/?phone=79108712928&text&type=phone_number&app_absent=0" target="_blank" class="footer-icon"> 
+          <p><a href="https://api.whatsapp.com/send/?phone=79108712928&text&type=phone_number&app_absent=0" target="_blank" className="footer-icon"> 
             <img src={wassapGif} alt="WhatsApp Icon" />
             WhatsApp
           </a></p>
-          <p><a href="https://t.me/Grand_Amak" target="_blank" class="footer-icon"> 
+          <p><a href="https://t.me/Grand_Amak" target="_blank" className="footer-icon"> 
             <img src={telegramGif} alt="Telegram Icon" />
             Telegram
           </a></p>

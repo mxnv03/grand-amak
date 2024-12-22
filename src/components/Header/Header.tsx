@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import logo from '/src/assets/Grand_Amak_logo.png';
 
-const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+const Header: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false); // Указываем тип состояния
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    setMenuOpen(!menuOpen); // Функция для переключения состояния
   };
 
   return (
